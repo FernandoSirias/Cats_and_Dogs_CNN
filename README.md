@@ -8,7 +8,7 @@ This project use images of dogs and cats from [TensorFlow Datasets](https://www.
 
 The `cats_vs_dogs` dataset from tensorflow contains more than **23000** pictures of cats and dogs. It provides the data as supervised, ('image', 'label').
 
-![cats_vs_dogs_1](./images./cats_vs_dogs_1.png)
+![cats_vs_dogs_1](./images/cats_vs_dogs_1.png)
 
 ## Preprocessing
 
@@ -16,19 +16,19 @@ Change the size of the image because has we can see above, images have differren
 
 Second step is change the color to gray scale only because in this case the color is not very important to predict if the image contain a dog or cat.
 
-![cats_vs_dogs_2](./images./cats_vs_dogs_2.png)
+![cats_vs_dogs_2](./images/cats_vs_dogs_2.png)
 
 At this point we have already completed most of the basic pre-processing, next we are going to perform ***data augmentation***, this will help the model learn more image combinations since we are going to generate images with some variations such as zooming, rotating, etc.
 
 **These are the images before data augmentation:**
 
-![cats_vs_dogs_3](./images./cats_vs_dogs_3.png)
+![cats_vs_dogs_3](./images/cats_vs_dogs_3.png)
 
 To perfomed data augmentation i'm going to use **ImageDataGenerator**. 
 
 See the documentation in [TensorFlow](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator) to see all the parameters for this function.
 
-![cats_vs_dogs_4](./images./cats_vs_dogs_4.png)
+![cats_vs_dogs_4](./images/cats_vs_dogs_4.png)
 
 ## Convolutional Neural Network
 
@@ -68,7 +68,7 @@ history = model.fit(full_train,
 
 This plots show the accuracy and loss of the model in training and validation. 
 
-![cats_vs_dogs_5](./images./cats_vs_dogs_5.png)
+![cats_vs_dogs_5](./images/cats_vs_dogs_5.png)
 
 ## Export Model
 
